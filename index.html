@@ -2,76 +2,95 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/sheild.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>University of Pennysylvania</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   </head>
   <body>
-    <div class="">
-       <div class="sticky top-0 hidden">
+    <div>
+       <div class=" hidden">
         <div class="flex justify-between items-center h-20 border-b bg-white">
            <p class="text-blue-950 text-xl ml-6"><i class="fa-solid fa-magnifying-glass"></i></p>
            <img class="h-12 " src="./images/logo.svg" alt="logo">
            <p class="text-blue-950 text-3xl mr-6"><i class="fa-solid fa-bars"></i></p>
          </div>
        </div>
-       <div class="bg-[url('./images/maskedNurse.jpeg')] h-[800px] w-[390px] bg-opacity-50 bg-cover bg-center">
-         <div class="flex overflow-y-scroll justify-between items-center h-20 border-b bg-black bg-opacity-60">
+       <div class="bg-[url('./images/maskedNurse.jpeg')] h-[800px] w-[390px] md:h-[820px] md:w-full bg-opacity-50 bg-cover bg-center">
+         <div class="flex  justify-between items-center h-20 border-b bg-black bg-opacity-60">
            <p class="text-white text-xl ml-6"><i class="fa-solid fa-magnifying-glass"></i></p>
-           <img class="h-12 " src="./images/logoOnly.svg" alt="logo">
+           <img class="h-12 md:h-14" src="./images/logoOnly.svg" alt="logo">
            <p class="text-white text-3xl mr-6"><i class="fa-solid fa-bars"></i></p>
          </div>
-         <div class="text-white overflow-y-scroll bg-black bg-opacity-60 h-[720px] flex flex-col gap-10">
+         <div class="text-white md:border-t bg-black bg-opacity-60 h-[720px] md:h-[740px] flex flex-col md:justify-end gap-10">
           <p class="mx-6 mt-20 font-semibold">HEALTH & MEDICINE</p>
           <p class="mx-6 font-serif font-light text-[40px] tracking-widest">Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands</p>
-          <p class="mx-6 text-lg">Penn Dental Medicine at PHMC on Cedar is one of five communtiy care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental and medical care.</p>
+          <p class="mx-6 md:mb-20 text-lg">Penn Dental Medicine at PHMC on Cedar is one of five communtiy care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental and medical care.</p>
          </div>
        </div>
-       <div class="mt-14 flex justify-center mb-20 border-2 h-10 ml-20 mr-20">
-          <select name="Topics" id="Topics">
-            <option class="hover:underline hover:text-red-800" value="">Featured</option>
-            <option value="">Arts & Humanities</option>
-            <option value="">Social Sciences</option>
-            <option value="">Business & Law</option>
-            <option value="">Natural Sciences</option>
-            <option value="">Technology</option>
-            <option value="">Health & Medicine</option>
-            <option value="">Campus & Community</option>
-            <option value="">Global</option>
-          </select>
-       </div>
+       <div  class="flex items-center justify-center">
+          <label class="cursor-pointer flex items-center border-b-2 border-gray-300 w-32 p-2  justify-between">
+            <input type="checkbox" class="peer hidden">
+            <span class="text-sm font-semibold opacity-70">Topics</span>
+            <i class="fa-solid fa-caret-down transition-transform peer-checked:rotate-180 duration-500"></i>
+            <div class="hidden absolute peer-checked:flex flex-col gap-3 pl-4 mt-[27rem] bg-white z-50 text-black">
+                <p class="opacity-70">Featured</p>
+                <p class="opacity-70">Arts & Humanities</p>
+                <p class="opacity-70">Social Sciences</p>
+                <p class="opacity-70">Business & Low</p>
+                <p class="opacity-70">Natural Sciences</p>
+                <p class="opacity-70">Technology</p>
+                <p class="opacity-70">Health & Medicine</p>
+                <p class="opacity-70">Campus & Community</p>
+                <p class="opacity-70">Global</p>
+            </div>
+          </label>
+        </div>
        <div class="mb-24">
         <p class="text-4xl mx-3 font-serif text-gray-800">News</p>
         <p class="text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
         <div class="flex group flex-col gap-4 justify-center mx-4 border-b-2">
           <p class="overflow-hidden"><img class="h-60 min-w-full group-hover:scale-110 duration-1000 group-hover:ease-in-out transition-transform" src="./images/alzheimersPollution.jpeg" alt=""></p>
-          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">HEALTH & MEDICINE</p>
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-800">HEALTH & MEDICINE</p>
           <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Exposure to air pollution worsens <br><span class=""> Alzheimer's disease</span></p>
           <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
         </div>
         <div class="border-b-2 py-5 mx-4 group">
-          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900 ">HEALTH & MEDICINE</p>
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-800 ">HEALTH & MEDICINE</p>
           <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">White coat ceremonies: A proffessional<br><span class="">milestone</span></p>
           <p class="text-gray-400 gropu-hover:underline flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
         </div>
         <div class="border-b-2 py-5 mx-4 group">
-          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">TECHNOLOGY</p>
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-800">TECHNOLOGY</p>
           <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Guiding light towards smarter technology</p>
           <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
         </div>
         <div class="border-b-2 py-5 mx-4 group">
-          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">NATURAL SCIENCES</p>
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-800">NATURAL SCIENCES</p>
           <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Charles Kane to receive Lorentz Medal</p>
           <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
         </div>
         <div class="border-b-2 py-5 mx-4 group">
-          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">HEALTH & MEDECINE</p>
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-800">HEALTH & MEDECINE</p>
           <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Pioneering strategy may keep breast cancer <br><span>from coming back</span></p>
           <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
         </div>
        </div>
-    </div>
+       <p class="text-red-800 mb-12 font-semibold text-sm flex justify-center items-center">MORE NEWS VIA PENN TODAY</p>
+       <div class="relative h-[550px]">
+         <img class="h-full" src="./images/labTech.jpeg" alt="labTEch">
+            <div class="flex absolute top-[360px] flex-col gap-5 mx-5 bg-blue-950 py-10 text-white justify-center items-center">
+                <p class="text-sm font-semibold">HEALTH & MEDECINE</p>
+                <p class="text-2xl font-serif flex flex-col justify-center items-center group hover:underline">Keeping food safe and animals<br><span>healthy</span></p>
+                <p class="text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
+                <p class="mx-4 text-center">As part of the Pennsylvania Animal Diagnostic Laboratory System (PADLS), Penn Vet's New Bolton Center helps to protect animals and humans from health threats and minimize agricultural economic loss.</p>
+                <div class="border rounded-full bg-blue-950 h-16 w-52 flex justify-center items-center group hover:bg-white"><button class="text-white font-bold text-sm group-hover:text-red-800">LEARN MORE</button></div>
+            </div>
+        </div>
+        <div class="mt-96">
+
+        </div>
+      </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
