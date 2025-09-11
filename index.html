@@ -9,25 +9,50 @@
   </head>
   <body>
     <div class="overflow-x-hidden">
-       <div class=" hidden">
-        <div class="flex justify-between items-center h-20 border-b bg-white">
-           <p class="text-blue-950 text-xl ml-6"><i class="fa-solid fa-magnifying-glass"></i></p>
-           <img class="h-12 " src="./images/logo.svg" alt="logo">
-           <p class="text-blue-950 text-3xl mr-6"><i class="fa-solid fa-bars"></i></p>
-         </div>
-       </div>
-       <div class="bg-[url('./images/maskedNurse.jpeg')] h-[800px] w-[390px] md:h-[820px] md:w-full bg-opacity-50 bg-cover bg-center">
-         <div class="flex  justify-between items-center h-20 border-b bg-black bg-opacity-60">
-           <p class="text-white text-xl ml-6"><i class="fa-solid fa-magnifying-glass"></i></p>
-           <img class="h-12 md:h-14" src="./images/logoOnly.svg" alt="logo">
-           <p class="text-white text-3xl mr-6"><i class="fa-solid fa-bars"></i></p>
-         </div>
-         <div class="text-white md:border-t bg-black bg-opacity-60 h-[720px] md:h-[740px] flex flex-col md:justify-end gap-10">
-          <p class="mx-6 mt-20 font-semibold">HEALTH & MEDICINE</p>
-          <p class="mx-6 font-semibold text-[40px] tracking-widest">Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands</p>
-          <p class="mx-6 md:mb-20 text-lg">Penn Dental Medicine at PHMC on Cedar is one of five communtiy care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental and medical care.</p>
-         </div>
-       </div>
+
+      <div class="relative overflow-hidden">
+      <img class="opacity- h-[44rem] w-full object-cover" src="./images/maskedNurse.jpeg" alt="background">
+      <div class="bg-gray-900 absolute inset-0 opacity-70"></div>
+      <div class="absolute top-0 right-0 left-0">
+
+        <div class="flex justify-between mx-8 py-4 md:w-full md:pr-20  border-b">
+          <p class="text-white text-2xl lg:hidden"><i class="fa-solid fa-magnifying-glass"></i></p>
+          <p class=""><img class="h-10 md:h-16" src="./images/logoOnly.svg" alt="logo"></p>
+          <p class="text-white text-3xl lg:hidden"><i class="fa-solid fa-bars"></i></p>
+          <div class="text-white justify-center items-center gap-4 hidden lg:flex">
+            <p class="text-white text-xl "><i class="fa-solid fa-magnifying-glass"></i></p>
+            <p class="p-4 text-[12px] font-bold tracking-wider">RESOURCES <span><i class="fa-solid fa-angle-down"></i></span></p>
+            <p class=" p-4 text-[12px] font-bold tracking-wider bg-[#990000]">GIVE TO PENN</p>
+          </div>
+        </div>
+
+
+        <div class="hidden lg:flex justify-evenly xl:justify-end xl:gap-10 xl:mr-4 text-white font-bold text-sm">
+          <p>ACADEMICS <span><i class="fa-solid fa-angle-down"></i></p>
+          <p class="opacity-50">/</p>
+          <p>ADMISSIONS & AID</p>
+          <p class="opacity-50">/</p>
+          <p>ATHLETICS</p>
+          <p class="opacity-50">/</p>
+          <p>RESEARCH & INNOVATION <span><i class="fa-solid fa-angle-down"></i></p>
+          <p class="opacity-50">/</p>
+          <p>LIFE AT PENN <span><i class="fa-solid fa-angle-down"></i></p>
+          <p class="opacity-50">/</p>
+          <p>ABOUT <span><i class="fa-solid fa-angle-down"></i></p>
+        </div>
+
+
+        <div class="ml-8 pt-20 flex flex-col">
+          <p class="text-white text-sm font-bold">HEALTH & MEDICINE</p>
+          <p class="text-white text-5xl font-serif md:w-[44rem] ">Penn Dental on Cedar Bridges medicine and dentistry, lightens ER demands</p>
+          <p class="text-6xl rounded-none text-white opacity-60"><i class="fa-solid fa-minus"></i></p>
+          <p class="text-white text-lg font-bold tracking-wide md:w-[40rem]">
+            Penn Dental Medicine at PHMC on Cedar is one of five community care programs the School of dental medicine operates. 
+            At Penn Dental on Cedar, part of the mission is to integrate dental and medical care.
+          </p>
+        </div>
+      </div>
+    </div>
        <div class="md:flex-row-reverse flex flex-col gap-14  md:justify-">
         <div  class="flex w-72 md:ml-[660px] items-center justify-center md:justify-end md:mr-10 md:mt-10">
             <label class="cursor-pointer flex items-center border-b-2 border-gray-300 w-32 p-2  justify-between">
@@ -306,52 +331,57 @@
             <p class="text-[14px] mx-6">The University of Pennsylvania seeks talented students, faculty, and staff with a wide variety of backgrounds, experiences, and perspectives. The University of Pennsylvania does not discriminate on the basis of race, color, sex, sexual orientation, religion, creed, national origin (including shared ancestry or ethnic characteristics), citizenship status, age, disability, veteran status or any other class protected under applicable federal, state, or local law in the administration of its admissions, financial aid, educational or athletic programs, or other University-administered programs or in its employment practices. Questions or complaints regarding this policy should be directed to the executive director of the Office of Equal Opportunity Programs; Franklin Building, 3451 Walnut Street, Suite 421, Philadelphia, PA 19104-6106; or (215) 898-6993.</p>
             <p class="border group hover:bg-white h-16 w-[300px] rounded-full flex justify-center items-center"><button class="text-[13px] font-bold group-hover:text-blue-950">NONDISCRIMINATION STATEMENT</button></p>
           </div>
-          <div class="bg-blue-950 bg-opacity-95">
-            <footer class="bg-[url('./images/footer-16.png')] h-[1550px] text-white text-center flex flex-col gap-12">
-                <p class="flex justify-center items-center pt-16"><img class="h-14" src="./images/logoOnly.svg" alt=""></p>
-                <div class="flex flex-col gap-1">
-                  <p>Philadelphia, PA 19104</p>
-                  <p>Telephone: <span class="text-blue-300 hover:underline"> (215) 898-5000</span></p>
-                </div>
-                <div class="text-sm font-semibold flex flex-col gap-6">
-                  <p>CONTACT US</p>
-                  <p>MAPS</p>
-                  <p>PARKING</p>
-                </div>
-                <div>
-                  <p class="text-2xl font-serif">Navigate</p>
-                  <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
-                </div>
-                <div class="text-sm font-semibold flex flex-col gap-6">
-                  <p>ALUMNI</p>
-                  <p>ATHLETICS</p>
-                  <p>BELONGING</p>
-                  <p>HEALTH CARE</p>
-                  <p>LIBRARIES</p>
-                  <p>ONLINE LEARNING</p>
-                  <p>PENN GLOBAL</p>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <p class="text-xl font-semibold">Penn's Heritage</p>
-                  <p class="text-sm italic mx-12">As America’s first university, Penn has a history that dates back to 1740 and shares many ties with the colonial city of Philadelphia and the birth of our nation.</p>
-                </div>
-                <div class=" flex justify-center  group items-center text-center">
-                  <button class="text-sm group-hover:bg-white group-hover:text-blue-950  rounded-full border h-14 w-44 font-semibold">OUR HISTORY</button>
-                </div>
-                <div class="text-sm font-semibold flex flex-col gap-6">
-                  <p>DISCLAIMER</p>
-                  <p>EMERGENCY SERVICES</p>
-                  <p>NONDISCRIMINATION</p>
-                  <p>PRIVACY POLICY</p>
-                  <p>REPORT ACCESSIBILITY ISSUES AND GET HELP</p>
-                  <p>REPORT COPYRIGHT INFRINGMENT</p>
-                </div>
-                <div class="flex gap-2 justify-center items-center">
-                  <p class="border h-16 w-16 flex justify-center items-center font-extralight"><i class="fa-solid fa-arrow-up"></i></p>
-                  <p class="text-sm">BACK TO TOP</p>
-                </div>
-            </footer>
+          <!-- <div class="bg-blue-950 bg-opacity-95">
+            <footer class="bg-[url('./images/footer-16.png')] h-[1550px] text-white text-center flex flex-col gap-12"> -->
+
+              <footer class="bg-[url('./images/footer-16.png')]">
+      <div class="bg-blue-950 bg-opacity-90 py-20 ">
+        <!-- upper footer -->
+        <div class="text-white md:flex justify-between md:px-8">
+          <div>
+            <div class="flex justify-center items-center"><p><img class="h-16" src="./images/logoOnly.svg" alt="logo"></p></div>
+            <p class="text-center mt-4 md:mt-8">Philadelphia, PA 19194</p>
+            <p class="text-center mt-3">Telephone: <span>(215) 898-5000</span></p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">CONTACT US</p>
+            <p class="text-center mt-3 text-[13px] font-semibold tracking-widest">MAPS</p>
+            <p class="text-center mt-3 text-[13px] font-semibold tracking-widest">PARKING</p>
           </div>
+          
+          <div class="mt-10">
+            <p class="text-center font-serif text-xl md:text-2xl md:font-bold">Navigate</p>
+            <p class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="none" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus text-gray-400"><path d="M5 12h14"/></svg></p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">ALUMNI</p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">ATHLETICS</p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">BELONGING</p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">HEALTH CARE</p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">LIBRARIES</p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">ONLINE LEARNING</p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">PENN GLOBAL</p>
+          </div>
+          <div class="mt-10">
+            <p class="text-center text-2xl font-bold">Penn's Heritage</p>
+            <p class="text-center mt-8 italic">As America's first university, Penn has a history <br class="hidden sm:block"> that dates back to 1740 and shares  many ties <br class="hidden sm:block"> with the colonial city of philadelphia and the <br class="hidden sm:block"> birth of our nation.</p>
+            <div class="flex justify-center items-center mt-4"><p class="border border-gray-500 hover:bg-white hover:text-[#011F5B] transform duration-500 py-4 px-10 text-[13px] font-semibold tracking-widest rounded-full">OUT HISTORY</p></div>
+          </div>
+        </div>
+
+        <!-- lower footer -->
+        <div class="text-white mt-10 md:flex justify-between px-8">
+          <div class="order-1 md:w-3/5 md:flex flex-wrap">
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">EMERGENCY SERVICES <span class="px-3 ">|</span></p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">NONDISCRIMINATION <span class="px-3">|</span></p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">PRIVACY POLICY <span class="px-3">|</span></p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">REPORT ACCESSIBILITY ISSUES AND GET HELP <span class="px-3">|</span></p>
+            <p class="text-center mt-6 text-[13px] font-semibold tracking-widest">REPORT COPYRIGHT INFRINGEMENT</p>
+          </div>
+          <div class="flex gap-4 justify-center items-center mt-10">
+            <p><i class="fa-solid fa-arrow-up"></i></p>
+            <p>BACK TO TOP</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
       </div>
     <script type="module" src="/src/main.js"></script>
   </body>
