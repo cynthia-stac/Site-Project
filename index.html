@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="">
-       <div class="sticky top-0">
+       <div class="sticky top-0 hidden">
         <div class="flex justify-between items-center h-20 border-b bg-white">
            <p class="text-blue-950 text-xl ml-6"><i class="fa-solid fa-magnifying-glass"></i></p>
            <img class="h-12 " src="./images/logo.svg" alt="logo">
@@ -22,16 +22,55 @@
            <img class="h-12 " src="./images/logoOnly.svg" alt="logo">
            <p class="text-white text-3xl mr-6"><i class="fa-solid fa-bars"></i></p>
          </div>
-         <div class="text-white overflow-y-scroll bg-black bg-opacity-60 h-full flex flex-col gap-10">
+         <div class="text-white overflow-y-scroll bg-black bg-opacity-60 h-[720px] flex flex-col gap-10">
           <p class="mx-6 mt-20 font-semibold">HEALTH & MEDICINE</p>
           <p class="mx-6 font-serif font-light text-[40px] tracking-widest">Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands</p>
           <p class="mx-6 text-lg">Penn Dental Medicine at PHMC on Cedar is one of five communtiy care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental and medical care.</p>
          </div>
        </div>
-       <div>
-
+       <div class="mt-14 flex justify-center mb-20 border-2 h-10 ml-20 mr-20">
+          <select name="Topics" id="Topics">
+            <option class="hover:underline hover:text-red-800" value="">Featured</option>
+            <option value="">Arts & Humanities</option>
+            <option value="">Social Sciences</option>
+            <option value="">Business & Law</option>
+            <option value="">Natural Sciences</option>
+            <option value="">Technology</option>
+            <option value="">Health & Medicine</option>
+            <option value="">Campus & Community</option>
+            <option value="">Global</option>
+          </select>
        </div>
-   
+       <div class="mb-24">
+        <p class="text-4xl mx-3 font-serif text-gray-800">News</p>
+        <p class="text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
+        <div class="flex group flex-col gap-4 justify-center mx-4 border-b-2">
+          <p class="overflow-hidden"><img class="h-60 min-w-full group-hover:scale-110 duration-1000 group-hover:ease-in-out transition-transform" src="./images/alzheimersPollution.jpeg" alt=""></p>
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">HEALTH & MEDICINE</p>
+          <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Exposure to air pollution worsens <br><span class=""> Alzheimer's disease</span></p>
+          <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
+        </div>
+        <div class="border-b-2 py-5 mx-4 group">
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900 ">HEALTH & MEDICINE</p>
+          <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">White coat ceremonies: A proffessional<br><span class="">milestone</span></p>
+          <p class="text-gray-400 gropu-hover:underline flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
+        </div>
+        <div class="border-b-2 py-5 mx-4 group">
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">TECHNOLOGY</p>
+          <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Guiding light towards smarter technology</p>
+          <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
+        </div>
+        <div class="border-b-2 py-5 mx-4 group">
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">NATURAL SCIENCES</p>
+          <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Charles Kane to receive Lorentz Medal</p>
+          <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
+        </div>
+        <div class="border-b-2 py-5 mx-4 group">
+          <p class="flex hover:underline justify-center items-center text-sm font-semibold text-red-900">HEALTH & MEDECINE</p>
+          <p class="flex flex-col group-hover:underline justify-center items-center text-lg font-serif text-blue-950">Pioneering strategy may keep breast cancer <br><span>from coming back</span></p>
+          <p class="text-gray-400 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg></p>
+        </div>
+       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
